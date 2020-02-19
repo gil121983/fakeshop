@@ -1,0 +1,126 @@
+input:focus {
+    outline:none;
+}
+.d1{
+    grid-area:logo ;
+}
+.d2{
+    grid-area:menu-bar;
+    display:grid;
+    grid-template-columns:repeat(6,auto);
+    justify-content: stretch;
+}
+.d3{
+    grid-area:search ;
+    display: flex;
+    background-color:rgb(40, 40, 40);
+    width: 175px;
+    padding: 0px;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+.d4{
+    grid-area:subscribe;
+    width: 150px;
+    display:flex;
+}
+.d5{
+    position: absolute;
+    grid-area:personal ;
+    width: 100%;
+    display: flex;
+    justify-content:  space-evenly;
+    /* border:5px solid red; */
+    align-self:center;
+}
+.navbar {
+    /* border:5px solid yellow; */
+    position:fixed; 
+        top:0; 
+    width: 100%;
+    background: rgb(0, 0, 0);
+    height: 53px;
+    font-size: 13px;
+    color: white;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 70px 450px 179px auto 400px  ;
+    grid-template-areas:"logo menu-bar search subscribe personal" ;
+    grid-area: navbar;
+    z-index: 10;
+}
+.mg2{
+    visibility: hidden;
+    margin-right: 28px;
+    }
+
+@media (max-width: 1400px){
+    .navbar{ grid-template-columns: 70px 550px auto 500px ;
+        grid-template-areas:"logo menu-bar subscribe personal" ;
+        justify-content: start;}
+    .d3{visibility: hidden;}
+    .d5{
+        grid-template-columns:150px repeat(4,auto);}
+    .mg2{visibility: visible;}
+}
+@media (max-width: 1350px){
+    .d5 a p{visibility: hidden;}
+}
+@media (max-width: 1150px){
+    .navbar { grid-template-columns: 70px 1fr auto ;
+        grid-template-areas:"logo subscribe personal" ; }
+    .d2{visibility: hidden;}
+    .d5{min-width: 275px;
+        justify-content:space-evenly;
+        justify-self: right 100% ;
+        }
+}
+
+.navbar div a {
+    text-decoration: none;
+    color: white;
+}
+.navbar :hover {
+    color: red;
+}
+.navbar-logo{
+    height: 50px;
+    width: 50px;
+}
+.sub-btn {
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 5px;
+    height: 32px;
+    font-size: 15px;
+    color:white;
+    text-align: center;
+    justify-self: start;
+}
+.sub-btn:hover {
+    border-style: inset;
+    color:white;
+}
+.search-bar {
+    background-color: rgb(40,40,40);
+    border: 5px solid rgb(40,40,40);
+    height: 32px;
+    width: 150px;
+    font-size: 18px;
+    color: white;
+    align-self: center;
+}
+.bar-img {
+    width: 20px; 
+    height: 20px;
+}
+.mg{
+    position: relative;
+    top: 7px; 
+}
+.d5 a  {
+    display:flex;
+}
+
+

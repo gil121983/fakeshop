@@ -1,0 +1,69 @@
+.foot-div-1 {
+    justify-self:center;
+    margin: 20px;
+    display: flex;
+}
+
+.foot-div-2 {
+    display: flex;
+    grid-template-columns: repeat(3,30%) ; 
+    justify-content: center;  
+     
+}
+.footer{
+    background:rgb(55,55,55) ;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    font-size: 12px;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    align-content: space-around;
+    grid-area: footer;
+    justify-content: space-evenly;
+
+}
+.footer div ul{
+    list-style: none;
+    margin:20px;
+}
+.footer div ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+.list-head{
+    font-weight: bold;
+}
+@media (max-width: 1100px){
+    .foot-div-2{grid-template-columns: auto;}
+    .footer{height: 600px;}
+}
+@media (max-width: 500px){
+    .footer{grid-template-columns: auto;}
+}
+
+.foot-logo{
+    width: 300px;
+}
+.logo-text{
+    position: relative;
+    bottom:50px ;
+    margin-left: 20px;
+}
+.social{
+    width:300px;
+    display: flex;
+    justify-content:flex-start;    
+    position: relative;
+    bottom:30px;
+}
+.foot-div-1 ul li a img{
+    width: 30px;
+    margin:20px;
+}
+.AFEM-logo{
+    width: 200px;
+}
