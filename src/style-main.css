@@ -8,7 +8,7 @@ body {
     background:rgb(40,40,40);
     font-family: sans-serif;
     display: grid;
-    grid-template-columns: minmax(400,1150) 400px;
+    grid-template-columns: AUTO 400px;
     grid-template-areas: 
     "navbar navbar"
     "slideshow top10"
@@ -30,7 +30,7 @@ body {
 }
 @media (max-width: 930px){
     body{
-    grid-template-columns: 1fr;
+    grid-template-columns: 88%;
     grid-template-areas: 
     "navbar"
     "slideshow" 
