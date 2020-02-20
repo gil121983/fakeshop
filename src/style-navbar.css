@@ -29,7 +29,7 @@ input:focus {
     grid-area:personal ;
     width: 100%;
     display: flex;
-    justify-content:  space-evenly;
+    justify-content: flex-end space-evenly;
     /* border:5px solid red; */
     align-self:center;
 }
@@ -76,7 +76,12 @@ input:focus {
         justify-self: right 100% ;
         }
 }
-
+@media (max-width: 930px){
+    .shop-cart{position: relative;left:-90px}
+    .login{position: relative;left:-20px}
+    .heart{position: relative;left:-40px}
+    .d5{min-width: 190px; align-content: flex-end;}
+}
 .navbar div a {
     text-decoration: none;
     color: white;

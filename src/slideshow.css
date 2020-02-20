@@ -1,43 +1,41 @@
 .dual-slide {
-  background: rgb(40,40,40);
-  max-width: 750px;
+  /* border: solid 5px rgb(255, 0, 200); */
+  grid-area: slideshow;
   box-sizing: border-box;
   display: flex;
   justify-items: center;
-  grid-area: slideshow;
-  margin: 20px;
+  flex-shrink: 1;
+  background: rgb(40,40,40);
+  max-width: 800px;
+
   margin-top: 60px;
   z-index: 5;
 }
+
 .mySlides1, .mySlides2 {display: none; z-index: 5;}
 
 .slideshow-container1 {
-  max-width: 800px;
-  position: relative;border: rgb(40,40,40)solid 5px; 
+  /* border: solid 5px orange; */
 }
 .slideshow-container2 {
-  max-width: 235px;
-  position: relative;
-  margin-top: 5px;
-  margin-left: 10px;
+  max-width: 314px;
+  /* border: solid 5px orange; */
   display: flex;
   flex-direction: column;
-
 }
-
-.slideshow-container2-alt {
-  max-width: 204px;
-  position: relative;
-  display: grid;
+.container1-title{
+  /* border: 5px solid green; */
 }
-
-/* Next & previous buttons */
+.container2-title{
+  /* border: 5px solid green; */
+  display:flex;
+  align-content: center;
+  height:70px;
+}
 .prev, .next {
   cursor: pointer;
-  /* position: absolute;
-  top: 50%; */
   width: auto;
-  padding: 16px;
+  padding: 10px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
@@ -50,26 +48,32 @@
   position: absolute;
   top: 50%;
 }
-.prev2, .next2{
-  position: absolute;
-  top: 3.25%;
-}
-.prev2{
-  right:20%;
-}
-
-/* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 50%;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a grey background color */
+.btn-S2{
+  margin:0;
+  /* border:solid 4px blue; */
+  width: 1px;
+  align-self: center;
+  align-content: center;
+}
+.S2-element{
+  /* border: solid 3px red;  */
+  display:inline-block;
+  
+}
+/* .spacer{
+  border: solid 3px rgb(212, 255, 0);
+  width:20px;
+  height:60px;
+}
+   */
 .prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
 }
-
 .dot-line {
   height: 30px;
   display: flex;
@@ -79,7 +83,7 @@
 .dot {
   cursor: pointer;
   height: 4px;
-  min-width: 50px;
+  min-width: 30px;
   margin: 0 2px;
   background-color: #bbb;
   display: inline-flex;
@@ -110,27 +114,17 @@
 
 @media (max-width: 1150px){
   .dual-slide{display:inline-block;}
-  .slideshow-container2{display: inline;}
-  .prev2, .next2{
-    position: absolute;
-    top: 3.485%;
-  }
-  .next2{
-    margin-left:450px;
-    left:0%;
-  }
-  .prev2{
-    margin-left:100px;
-    left: 300px;}
+  .slideshow-container2{max-width: 100%;}
+ 
 }
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  /* padding: 8px 12px; */
+  padding: 8px 12px;
   background: black;
-  position: relative; 
-  bottom: 40px;
+  /* position: relative; 
+  bottom: 40px; */
   width: 100%;
   text-align: center;
-  z-index:6;
+
 }
