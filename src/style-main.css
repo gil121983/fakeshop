@@ -30,7 +30,7 @@ body {
 }
 @media (max-width: 930px){
     body{
-    grid-template-columns: 88%;
+    grid-template-columns: 94%;
     grid-template-areas: 
     "navbar"
     "slideshow" 

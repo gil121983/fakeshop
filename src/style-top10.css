@@ -1,8 +1,8 @@
 .top10{
     background:rgb(50,50,50);
     color: white;
-    height: 890px;
-    width: 340px;
+    height: 910px;
+    width: 100%;
     margin: 20px;
     margin-top: 75px;
     grid-area: top10;
