@@ -1,12 +1,11 @@
 .top10{
     background:rgb(50,50,50);
     color: white;
-    height: 910px;
+    height: 890px;
     width: 100%;
-    margin: 20px;
-    margin-top: 75px;
     grid-area: top10;
     justify-self: center;
+    margin: 30px;
 }
 .top10 div ul{
     list-style: none;
@@ -19,6 +18,7 @@
     display:flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 24px;
     height: 50px;
     background: rgb(40,40,40);
     

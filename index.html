@@ -10,21 +10,18 @@
   <link rel="stylesheet" href="src/style-footer.css">
   <link rel="stylesheet" href="src/slideshow.css">
   <link rel="stylesheet" href="src/style-top10.css">
-
-</head>
-
-<body>
+  <link rel="stylesheet" href="src/slideshow-expand.css">
 
   <div class="navbar">
-    <div class="d1"><img class="navbar-logo" src="src/img/navbar/logo-red.png" alt=""></div>
+    <div class="d1"> <a href="#"><img class="navbar-logo" src="src/img/navbar/logo.png" alt=""></a> </div>
 
     <div class="d2">
-      <a href="#">GENRES</a>
-      <a href="#">TRACKS</a>
-      <a href="#">RELEASES</a>
-      <a href="#">CHART</a>
-      <a href="#">COMUNITY</a>
-      <a href="#">LOOPSHOP</a>
+      <a class="menu-item" href="#">GENRES</a>
+      <a class="menu-item" href="#">TRACKS</a>
+      <a class="menu-item" href="#">RELEASES</a>
+      <a class="menu-item" href="#">CHART</a>
+      <a class="menu-item" href="#">BEATPORTAL</a>
+      <a class="menu-item" href="#">LOOPCLOUD</a>
     </div>
 
     <div class="d3"><img src="src/img/navbar/mg-white.png" class="bar-img mg"><input type="text" name=""
@@ -45,24 +42,37 @@
 
   </div>
 
+</head>
+
+<body>
+
+
+
   <div class="dual-slide">
-    <div class="slideshow-container1">
+    <div class="slideshow-container1 ">
       <p class="div-title container1-title">NEW ON FAKESHOP</p>
-      <div class="mySlides1 fade">
-        <img src="src/img/front-page/slideshow1/img1.png" style="width:100%">
+
+      <div class="container1">
+        <div class="mySlides1 fade">
+          <img src="src/img/front-page/slideshow1/img1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1 fade">
+          <img src="src/img/front-page/slideshow1/img2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1 fade">
+          <img src="src/img/front-page/slideshow1/img3.png" style="width:100%">
+        </div>
+
+        <div class="pop-box"></div>
+        <div class="arrow1 arrows" onclick="plusSlides(-1, 0)"><a href="#" class="arrow-txt">&#10094;</a></div>
+        <div class="arrow2 arrows" onclick="plusSlides(1, 0)"><a href="#" class="arrow-txt">&#10095;</a></div>
+
       </div>
 
-      <div class="mySlides1 fade">
-        <img src="src/img/front-page/slideshow1/img2.png" style="width:100%">
-      </div>
-
-      <div class="mySlides1 fade">
-        <img src="src/img/front-page/slideshow1/img3.png" style="width:100%">
-      </div>
-
-      <a class="prev prev1" onclick="plusSlides(-1, 0)">&#10094;</a>
-      <a class="next next1" onclick="plusSlides(1, 0)">&#10095;</a>
       <br>
+
       <div class="dot-line">
         <span class="dot" onclick="currentSlide(1,0)"></span>
         <span class="dot" onclick="currentSlide(2,0)"></span>
@@ -74,46 +84,49 @@
         <span class="dot" onclick="currentSlide(8,0)"></span>
         <span class="dot" onclick="currentSlide(9,0)"></span>
       </div>
+
     </div>
 
     <div class="slideshow-container2">
+
       <div class="container2-title">
-        <p class="div-title">DJ CHARTS</p>
+        <div class="div-title"><p>DJ CHARTS</p></div>
         <a class="prev prev2 btn-S2" onclick="plusSlides(-1, 1)">&#10094;</a>
         <a class="next next2 btn-S2" onclick="plusSlides(1, 1)">&#10095;</a>
       </div>
+      <div class="container2">
+        <div class="mySlides2 fade">
+          <img src="src/img/front-page/slideshow2/dj1.png" style="width:100%">
 
-      <div class="mySlides2 fade">
-        <img src="src/img/front-page/slideshow2/dj1.png" style="width:100%">
+          <img src="src/img/front-page/slideshow2/dj2.png" style="width:100%">
 
-        <img src="src/img/front-page/slideshow2/dj2.png" style="width:100%">
+          <img src="src/img/front-page/slideshow2/dj3.png" style="width:100%">
 
-        <img src="src/img/front-page/slideshow2/dj3.png" style="width:100%">
-
-      </div>
-      
-      <div class="mySlides2 fade">
-        <div class="S2-element">
-          <a href=""><img src="src/img/front-page/slideshow2/dj2.png" style="width:100%"></a>
-          <div class="text">Caption Text asdasd</div>
-        </div>
-        <div class="S2-element">
-          <a href=""><img src="src/img/front-page/slideshow2/dj1.png" style="width:100%"></a>
-          <div class="text">Caption Text asdasd</div>
-        </div>
-        <div class="S2-element">
-          <a href=""><img src="src/img/front-page/slideshow2/dj3.png" style="width:100%"></a>
-          <div class="text">Caption Text asdasd</div>
         </div>
 
+        <div class="mySlides2 fade">
+          <div class="S2-element">
+            <a href=""><img src="src/img/front-page/slideshow2/dj2.png" style="width:100%"></a>
+            <div class="text">Caption Text asdasd</div>
+          </div>
+          <div class="S2-element">
+            <a href=""><img src="src/img/front-page/slideshow2/dj1.png" style="width:100%"></a>
+            <div class="text">Caption Text asdasd</div>
+          </div>
+          <div class="S2-element">
+            <a href=""><img src="src/img/front-page/slideshow2/dj3.png" style="width:100%"></a>
+            <div class="text">Caption Text asdasd</div>
+          </div>
 
-      </div>
 
-      <div class="mySlides2 fade">
-        <img src="src/img/front-page/slideshow2/dj3.png" style="width:100%">
-        <img src="src/img/front-page/slideshow2/dj2.png" style="width:100%">
-        <img src="src/img/front-page/slideshow2/dj1.png" style="width:100%">
+        </div>
 
+        <div class="mySlides2 fade">
+          <img src="src/img/front-page/slideshow2/dj3.png" style="width:100%">
+          <img src="src/img/front-page/slideshow2/dj2.png" style="width:100%">
+          <img src="src/img/front-page/slideshow2/dj1.png" style="width:100%">
+
+        </div>
       </div>
       <br>
       <div class="dot-line">
@@ -133,7 +146,7 @@
         <div class="que-btn">
           <div class="play-btn">►</div> ≡⧾
         </div>
-        <h3 style="color: red;">FAKESHOP </h3>
+        <h3 style="color: yellowgreen;">FAKESHOP </h3>
         <h3 style="margin-left: 10px;">TOP 10</h3>
       </div>
     </div>
@@ -243,6 +256,7 @@
 
 
   <script src="src/js/slideshow.js"></script>
+
   <div class="footer">
     <div class="foot-div-1">
       <ul>
