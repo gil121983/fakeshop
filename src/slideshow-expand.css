@@ -1,8 +1,8 @@
 .container1{
     position: relative;
-    border:3px solid magenta;
+    /* border:3px solid magenta; */
     display: flex;
-    flex-wrap: wrap;
+    height: ;
 }
 .pop-box{
     transition: 0.2s;
