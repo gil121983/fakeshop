@@ -1,0 +1,49 @@
+.container1{
+    position: relative;
+    /* border:3px solid magenta; */
+    display: flex;
+    height: ;
+}
+.pop-box{
+    transition: 0.2s;
+    z-index: 7;
+    border:1px solid rgb(40,40,40);
+    background: rgb(20,20,20,0.9);;
+    position: absolute;
+    bottom:0;  
+    display:inline;
+    width:100%;
+    height: 0;
+}
+
+ .arrows{
+     z-index: 7;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    background: rgb(20,20,20,0.9);
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: 15%;
+    height: 25%;
+    font-weight: bold;
+}
+
+.arrow1{
+    clip-path: polygon(0% 0, 0% 50%, 0% 100%, 0 100%, 0 0);
+}
+
+.arrow2{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 100% 100%, 100% 0);
+    position: absolute;
+    right:0;
+} 
+
+.arrow-txt{color:white; text-decoration: none;}
+
+.container1:hover .pop-box{height:30%;}
+.container1:hover .arrow1{clip-path: polygon(26% 0, 66% 50%, 26% 100%, 0 100%, 0 0);}
+.container1:hover .arrow2{clip-path: polygon(74% 0, 33% 50%, 74% 100%, 100% 100%, 100% 0);}
+.arrow-txt:hover{color:yellowgreen;}
